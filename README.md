@@ -1,9 +1,3 @@
-# ahmet-furkan-sevim-odev2
-## About
-FMSS Bilişim Kotlin Bootcamp 2. Hafta Ödevleri
-- 📫 How to reach me: ... [Linkedin Profile](https://www.linkedin.com/in/ahmetfurkansevim/)
-- 😄 Pronouns: ... He,Him
-
 ## Eager vs lazy filters
 see documentation [here](https://github.com/ahmetfurkans/ahmet-furkan-sevim-odev2/blob/master/Eager-lazy-filters.md)
 
