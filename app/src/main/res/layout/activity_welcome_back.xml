@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WelcomeBackActivity">
+
+        <ImageView
+            android:id="@+id/welcomeback_bg"
+            android:layout_width="643dp"
+            android:layout_height="713dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-80dp"
+            android:contentDescription="@string/background_svg"
+            android:src="@drawable/ic_welcomeback_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_icon"
+            style="@style/back_icon"
+            android:contentDescription="@string/back_icon"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeback_h1"
+            style="@style/welcomback_h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/welcome_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_icon" />
+
+        <TextView
+            android:id="@+id/welcomeback_h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/enter_your_username_amp_password"
+            android:textColor="#565656"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/welcomeback_h1"
+            app:layout_constraintTop_toBottomOf="@id/welcomeback_h1" />
+
+        <EditText
+            android:id="@+id/welcomeback_username"
+            style="@style/edit_text"
+            android:layout_marginTop="117dp"
+            android:autofillHints="Username"
+            android:hint="@string/username"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeback_h2" />
+
+        <EditText
+            android:id="@+id/welcomeback_password"
+            style="@style/edit_text"
+            android:layout_marginTop="67dp"
+            android:autofillHints="Password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeback_username" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/welcomeback_login"
+            style="@style/getstarted_button"
+            android:layout_width="229dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="95dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeback_password" />
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/inder"
+            android:gravity="center"
+            android:text="@string/forgotten_passwoard_nor_create_a_new_account"
+            android:textColor="#6B6B6B"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeback_login" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

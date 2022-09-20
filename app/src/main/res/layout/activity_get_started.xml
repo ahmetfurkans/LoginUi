@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GetStartedActivity">
+
+        <ImageView
+            android:id="@+id/getstarted_bg"
+            android:layout_width="643dp"
+            android:layout_height="713dp"
+            android:layout_marginTop="-250dp"
+            android:layout_marginEnd="-309dp"
+            android:contentDescription="@string/background_svg"
+            android:scaleX="0.95"
+            android:src="@drawable/ic_getstarted_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/smallImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="322dp"
+            android:contentDescription="@string/small_image"
+            android:src="@drawable/getstarted_smallimg"
+            app:layout_constraintEnd_toEndOf="@id/getstarted_bg"
+            app:layout_constraintTop_toTopOf="@id/getstarted_bg" />
+
+        <ImageView
+            android:id="@+id/bigImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-125dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/big_image"
+            android:src="@drawable/getstarted_bigimg"
+            app:layout_constraintStart_toStartOf="@id/smallImg"
+            app:layout_constraintTop_toBottomOf="@id/smallImg" />
+
+        <TextView
+            android:id="@+id/getstarted_h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/let_s_get_started"
+            android:textColor="@color/black"
+            android:textSize="72sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bigImg" />
+
+        <TextView
+            android:id="@+id/getstarted_h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/grow_together"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/getstarted_h1"
+            app:layout_constraintTop_toBottomOf="@id/getstarted_h1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/join"
+            style="@style/getstarted_button"
+            android:layout_width="281dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/join_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/getstarted_h2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

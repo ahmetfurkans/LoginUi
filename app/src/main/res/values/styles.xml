@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="getstarted_button">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:fontFamily">@font/inder</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">309dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/inder</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="welcomback_h1">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="back_icon">
+        <item name="android:contentDescription">@string/backgorund</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/icon_shape</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">29dp</item>
+    </style>
+</resources>
